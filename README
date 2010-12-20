@@ -74,7 +74,12 @@ Installation
        'heroism.middleware.HeroismMiddleware',
        ...
    )
-
+   
+   Add the HeroismMiddleware to your list of middleware
+   TEMPLATE_CONTEXT_PROCESSORS = (
+		'heroism.context_processors.ssl_media',
+		...
+	)
 3) Adjust the header name/value defaults in django-heroism/heroism/__init__.py
    if you don't like them.
 
